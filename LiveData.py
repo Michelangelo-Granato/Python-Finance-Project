@@ -22,15 +22,15 @@ fig.add_trace(go.Candlestick(x=data.index,
     close=data['Close'],
     name = 'market data'))
 
-#fig.update_layout(
-   # title='Uber'
-   # yaxis_title ='Stock Price')
+fig.update_layout(
+   title='Uber',
+   yaxis_title ='Stock Price')
 
 
 fig.update_xaxes(
     rangeslider_visible=True,
     rangeselector=dict(
-        button=list([
+        buttons=list([
             dict(count=15,label='15m',step='minute', stepmode='backward'),
             dict(count=45,label='45m',step='minute', stepmode='backward'),
             dict(count=1,label='HTD',step='hour', stepmode='todate'),
