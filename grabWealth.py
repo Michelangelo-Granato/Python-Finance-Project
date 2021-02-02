@@ -2,10 +2,10 @@ from wsimple.api import Wsimple, WSOTPUser
 from getpass import getpass
 import json
 
-#email = str(input("Enter email: \n>>>"))
-#passw = str(getpass("Enter password (Invisible text input): \n>>>"))
-email = "391michelangelo@gmail.com"
-passw = "4NPez9HSqrsn2MH"
+email = str(input("Enter email: \n>>>"))
+passw = str(getpass("Enter password (Invisible text input): \n>>>"))
+#email = "example@gmail.com"
+#passw = "example"
 try:
     ws = Wsimple(email, passw)
     tokens = ws.tokens
